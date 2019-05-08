@@ -16,10 +16,14 @@ Assuming the first order reactions, ordinary differential equations (ODEs) are e
 <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BdC%7D%7Bdt%7D%20%3D%20k_2B">
 <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BdD%7D%7Bdt%7D%20%3D%20k_3B">
 
-The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha/reaction_kinetics/blob/master/ode.m)
+The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha/reaction_kinetics/blob/master/ode.m).
 
 ## Find optimum k
-To integrate ODEs, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`](https://github.com/pangnattacha/reaction_kinetics/blob/master/fun1.m)
+To integrate ODEs, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`](https://github.com/pangnattacha/reaction_kinetics/blob/master/fun1.m).
 
 ## Report the result
-A script `result` for loading the datafile, calling the functions to optimize k values to fit the reaction model can be found [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/result.m)
+A script `result` for loading the datafile, calling the functions to optimize k values to fit the reaction model and plotting the results can be found [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/result.m). The plots comparing between model prediction and raw data are shown in the following.
+
+<img scr="https://github.com/pangnattacha/reaction_kinetics/blob/master/result100.jpg">
+<img scr="https://github.com/pangnattacha/reaction_kinetics/blob/master/result200.jpg">
+<img scr="https://github.com/pangnattacha/reaction_kinetics/blob/master/result300.jpg">
