@@ -19,4 +19,4 @@ Assuming the first order reactions, ordinary differential equations (ODEs) are e
 The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha/reaction_kinetics/blob/master/ode.m)
 
 ## Find optimum k
-To integrate ODEs, a local function called `pred` using MATLAB function called `ode45` was created. Then k values were optimized using MATLAB function called `lsqnonlin`. These codes are stored inside the function [`fun1`]()
+To integrate ODEs, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`]()
