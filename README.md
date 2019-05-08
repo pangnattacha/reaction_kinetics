@@ -22,4 +22,4 @@ The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha
 To integrate ODEs, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`](https://github.com/pangnattacha/reaction_kinetics/blob/master/fun1.m)
 
 ## Report the result
-A script for loading the datafile, calling the functions to optimize k values to fit the reaction model can be found [here]()
+A script `result` for loading the datafile, calling the functions to optimize k values to fit the reaction model can be found [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/result.m)
