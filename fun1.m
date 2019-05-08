@@ -7,10 +7,10 @@ function [k_optim,RMSE] = fun1(Temp)
     y = tableAC{idx,comp};
     x0 = y(1,:);
     
-    %assume parameters
+    %assume parameters as initial guess
     k0 = zeros(3,1); %k1~k3
     
-    %find Par_optim to fit kinetic model
+    %find k_optim to fit kinetic model
     err = @(k) pred(k,t,x0)-y;
     lb = [0 0 0];
     ub = [];
