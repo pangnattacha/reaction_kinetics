@@ -17,3 +17,6 @@ Assuming the first order reactions, ordinary differential equations (ODEs) are e
 <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BdD%7D%7Bdt%7D%20%3D%20k_3B">
 
 The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha/reaction_kinetics/blob/master/ode.m)
+
+## Find optimum k
+To integrate ODEs, MATLAB function called ode45 inside the function [`fun1`]()
