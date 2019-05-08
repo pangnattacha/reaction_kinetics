@@ -22,8 +22,6 @@ The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha
 To integrate ODEs, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`](https://github.com/pangnattacha/reaction_kinetics/blob/master/fun1.m).
 
 ## Report the result
-A script `result` for loading the datafile, calling the functions to optimize k values to fit the reaction model and plotting the results can be found [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/result.m). The plots comparing between model prediction and raw data are shown in the following.
+A script `result` for loading the datafile, calling the functions to optimize k values to fit the reaction model and plotting the results can be found [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/result.m). The plots comparing between model prediction and raw data for three different temperatures are shown in the following.
 
-<img scr="https://github.com/pangnattacha/reaction_kinetics/blob/master/result100.jpg">
-<img scr="https://github.com/pangnattacha/reaction_kinetics/blob/master/result200.jpg">
-<img scr="https://github.com/pangnattacha/reaction_kinetics/blob/master/result300.jpg">
+<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/result100.jpg" width="30%" height="30%"><img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/result200.jpg" width="30%" height="30%"><img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/result300.jpg" width="30%" height="30%">
