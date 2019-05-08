@@ -15,4 +15,4 @@ Assuming the first order reactions, ordinary derivative equations (ODEs) are exp
 <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BdC%7D%7Bdt%7D%20%3D%20k_2B">
 <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7BdD%7D%7Bdt%7D%20%3D%20k_3B">
 
-The ODEs are stored as a function called [`ode`]()
+The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha/reaction_kinetics/blob/master/ode.m)
