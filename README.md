@@ -19,7 +19,7 @@ Assuming the first order reactions, ordinary differential equations (ODEs) are e
 The ODEs are stored as a function called [`ode`](https://github.com/pangnattacha/reaction_kinetics/blob/master/ode.m).
 
 ## Find optimum k
-To integrate ODEs, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`](https://github.com/pangnattacha/reaction_kinetics/blob/master/fun1.m). This function returns `k_optim` and `RMSE`(root mean squared error).
+To integrate ODEs and predict yields of each product in the reaction chains, a local function called `pred` using MATLAB function called [`ode45`](https://uk.mathworks.com/help/matlab/ref/ode45.html?requestedDomain=) was created. Then k values were optimized by data fitting that minimize the least square error using MATLAB function called [`lsqnonlin`](https://uk.mathworks.com/help/optim/ug/lsqnonlin.html). These codes are stored inside the function [`fun1`](https://github.com/pangnattacha/reaction_kinetics/blob/master/fun1.m). This function returns `k_optim` and `RMSE`(root mean squared error).
 
 ## Report the result
 A script [`result`](https://github.com/pangnattacha/reaction_kinetics/blob/master/result.m) was written for loading the datafile, calling the functions to optimize k values to fit the reaction model and plotting the results. The plots comparing between model prediction and raw data for three different temperatures are shown in the following.
