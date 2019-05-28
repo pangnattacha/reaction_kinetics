@@ -1,10 +1,10 @@
 function [k_optim,RMSE] = fun1(Temp)
 
-    tableAC = readtable('data_dummy.xlsx');
-    idx = tableAC.Temp == Temp;
-    t = tableAC{idx,'time'};
+    table = readtable('data_dummy.xlsx');
+    idx = table.Temp == Temp;
+    t = table{idx,'time'};
     comp = {'A', 'B', 'C', 'D'};
-    y = tableAC{idx,comp};
+    y = table{idx,comp};
     x0 = y(1,:);
     
     %assume parameters as initial guess
