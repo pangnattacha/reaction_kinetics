@@ -24,7 +24,7 @@ To integrate ODEs and predict yields of each product in the reaction chains, a l
 ## Report the result
 A script [`result`](https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result.m) was written for loading the datafile, calling the functions to optimize k values to fit the reaction model and plotting the results. The plots comparing between model prediction and raw data for three different temperatures are shown in the following.
 
-<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result100.jpg" width="30%" height="30%"><img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result200.jpg" width="30%" height="30%"><img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/.jpg" width="30%" height="30%">
+<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result100.jpg" width="30%" height="30%"><img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result200.jpg" width="30%" height="30%"><img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result300.jpg" width="30%" height="30%">
 
 In addition, activation energy(Ea) and pre-exponential factor(A) can be calculated from the Ahrrenius equation:
 
