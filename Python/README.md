@@ -3,10 +3,10 @@
 ## Introduction
 This project is to create **Python** code for fitting data with a chemical reaction model as shown below:
 
-<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/reactions.png" width="70%" height="70%">
+<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/reactions.png" width="70%" height="70%">
 
 ## Problem setup
-Optimizing kinetic rate constant (k) of each reaction that fit the experimental data [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/data_dummy.xlsx) with the prediction from this model.
+Optimizing kinetic rate constant (k) of each reaction that fit the experimental data [here](https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/data_dummy.xlsx) with the prediction from this model.
 
 ## Create kinetic rate equations from the model
 Assuming the first order reactions, ordinary differential equations (ODEs) are expressed as 
@@ -28,4 +28,4 @@ The script [`result`](https://github.com/pangnattacha/reaction_kinetics/blob/mas
 It called methods from `Optimize_k` to find optimum k at each temperature.
 The plots comparing between model prediction and raw data are shown in the following.
 
-<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/Python/result.png">
+<img src="https://github.com/pangnattacha/reaction_kinetics/blob/master/Python/model_result.png">
