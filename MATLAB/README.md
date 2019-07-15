@@ -31,3 +31,7 @@ In addition, activation energy(Ea) and pre-exponential factor(A) can be calculat
 <img src="https://latex.codecogs.com/gif.latex?k%3DAe%5E%7B%5Cfrac%7B-E_a%7D%7BRT%7D%7D">
 
 where R is a gas constant and T is an absolute temperature. By running [`result`](https://github.com/pangnattacha/reaction_kinetics/blob/master/MATLAB/result.m), Ea and A were also obtained.
+
+
+## Reference
+MATLAB coding follows the steps reported in https://doi.org/10.1021/acssuschemeng.8b02118.
