@@ -30,12 +30,11 @@ clear
     end
     
     %calculat r^2
-    R2_AC = zeros(1,n);
-    R2_MC = zeros(1,n);
+    R2 = zeros(1,n);
     for i= 1:n
-        SS_resAC = sum(lnk_res(:,i).^2);
-        SS_totalAC = (length(lnk)-1) * var(lnk(:,i));
-        R2_AC(i) = 1-SS_resAC/SS_totalAC;
+        SS_res = sum(lnk_res(:,i).^2);
+        SS_total = (length(lnk)-1) * var(lnk(:,i));
+        R2(i) = 1-SS_res/SS_total;
     end
     
     Ea =  -p(:,1).*8.314 %calc from slope
